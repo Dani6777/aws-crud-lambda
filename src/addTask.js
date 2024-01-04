@@ -14,7 +14,8 @@ const addTask = async (event) => {
         id,
         title,
         description,
-        createdAt
+        createdAt,
+        done: false
     };
 
     // Guardamos los datos en DynamoDB
@@ -24,7 +25,7 @@ const addTask = async (event) => {
     }).promise();
 
     return {
-        statusCode: 200,
+        status: 200,
         body: JSON.stringify(newTask)
     };
 };
