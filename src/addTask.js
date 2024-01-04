@@ -1,5 +1,6 @@
 const { v4 } = require('uuid');
 const AWS = require('aws-sdk');
+AWS.config.update({ region: 'us-west-2' });
 
 const addTask = async (event) => {
     // Intenta conectarse a la bd de DynamoDB de AWS
