@@ -1,6 +1,4 @@
 
-Claro, aquí tienes un README más detallado para el desafío propuesto:
-
 Desafío de Desarrollo Full Stack
 Este proyecto es una aplicación web que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre un conjunto de datos. La aplicación consta de un Front End desarrollado con React JS y TypeScript, gestionando el estado mediante React Context, y un Back End implementado en Node JS utilizando Serverless Framework, con una base de datos DynamoDB para almacenar la información. Además, se incluye la integración de tecnologías deseadas, en este caso, Serverless en AWS, y pruebas unitarias con Jest.js.
 
