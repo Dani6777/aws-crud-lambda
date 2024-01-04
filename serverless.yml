@@ -24,14 +24,14 @@ functions:
     handler: src/addTask.addTask
     events:
       - httpApi:
-          path: /tasks
+          path: /create
           method: post
 
   getTasks:
     handler: src/getTasks.getTasks
     events:
       - httpApi:
-          path: /tasks
+          path: /Tasks
           method: get
   
   getTask:
