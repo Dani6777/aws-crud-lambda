@@ -11,10 +11,10 @@ Este proyecto es una aplicación web que permite realizar operaciones CRUD (Crea
 
 ## Estructura del Proyecto
 
-/desafio-full-stack
-  /frontend
-    /src
-    /public
-  /backend
-    /src
-  /tests
+- desafio-full-stack
+- frontend
+    -src
+    -public
+  -backend
+    -src
+  -tests
