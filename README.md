@@ -13,8 +13,8 @@ Este proyecto es una aplicación web que permite realizar operaciones CRUD (Crea
 
 - desafio-full-stack
 - frontend
-    -src
-    -public
-  -backend
-    -src
-  -tests
+    - src
+    - public
+  - backend
+    - src
+  - tests
