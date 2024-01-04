@@ -1,92 +1,63 @@
-<!--
-title: 'AWS Simple HTTP Endpoint example in NodeJS'
-description: 'This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.'
-layout: Doc
-framework: v3
-platform: AWS
-language: nodeJS
-authorLink: 'https://github.com/serverless'
-authorName: 'Serverless, inc.'
-authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
--->
 
-# Serverless Framework Node HTTP API on AWS
+Claro, aquí tienes un README más detallado para el desafío propuesto:
 
-This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.
+Desafío de Desarrollo Full Stack
+Este proyecto es una aplicación web que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre un conjunto de datos. La aplicación consta de un Front End desarrollado con React JS y TypeScript, gestionando el estado mediante React Context, y un Back End implementado en Node JS utilizando Serverless Framework, con una base de datos DynamoDB para almacenar la información. Además, se incluye la integración de tecnologías deseadas, en este caso, Serverless en AWS, y pruebas unitarias con Jest.js.
 
-This template does not include any kind of persistence (database). For more advanced examples, check out the [serverless/examples repository](https://github.com/serverless/examples/) which includes Typescript, Mongo, DynamoDB and other examples.
+Requisitos
+Node.js (v14 o superior)
+npm (v6 o superior)
+Serverless Framework (v3.0 o superior)
+AWS Account (para la integración de tecnologías deseadas)
+Estructura del Proyecto
+bash
+Copy code
+/desafio-full-stack
+  /frontend
+    /src
+    /public
+  /backend
+    /src
+  /tests
+frontend: Contiene el código del Front End desarrollado con React y TypeScript.
+backend: Contiene el código del Back End desarrollado con Node.js y Serverless Framework.
+tests: Incluye las pruebas unitarias realizadas con Jest.js.
+Configuración
+Front End:
 
-## Usage
+Navega al directorio /frontend.
+Ejecuta npm install para instalar las dependencias.
+Copia el archivo .env.example como .env y configura las variables de entorno según sea necesario.
+Back End:
 
-### Deployment
+Navega al directorio /backend.
+Ejecuta npm install para instalar las dependencias.
+Configura las credenciales de AWS en Serverless Framework.
+Desarrollo del Front End
+El Front End se desarrolló utilizando React y TypeScript. Se implementó el manejo de estado global mediante React Context para facilitar las operaciones CRUD.
 
-```
-$ serverless deploy
-```
+Desarrollo del Back End
+El Back End se construyó con Node.js y Serverless Framework. Se establecieron las operaciones CRUD para interactuar con una base de datos DynamoDB, proporcionando una API REST.
 
-After deploying, you should see output similar to:
+Integración de Tecnologías Deseadas
+Se integraron tecnologías deseadas, como Serverless en AWS, para facilitar la escalabilidad y el despliegue eficiente de la aplicación.
 
-```bash
-Deploying aws-node-http-api-project to stage dev (us-east-1)
+Pruebas y Optimización
+Se realizaron pruebas unitarias exhaustivas utilizando Jest.js para garantizar la robustez del código. Además, se implementaron optimizaciones para mejorar el rendimiento y la eficiencia.
 
-✔ Service deployed to stack aws-node-http-api-project-dev (152s)
+Ejecución del Proyecto
+Front End:
 
-endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/
-functions:
-  hello: aws-node-http-api-project-dev-hello (1.9 kB)
-```
+Navega al directorio /frontend.
+Ejecuta npm start para iniciar el servidor de desarrollo.
+Back End:
 
-_Note_: In current form, after deployment, your API is public and can be invoked by anyone. For production deployments, you might want to configure an authorizer. For details on how to do that, refer to [http event docs](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/).
+Navega al directorio /backend.
+Ejecuta sls offline para iniciar el servidor local.
+Abre tu navegador y accede a http://localhost:3000 para interactuar con la aplicación.
 
-### Invocation
+Contribuciones
+¡Contribuciones son bienvenidas! Si deseas contribuir, sigue las pautas en CONTRIBUTING.md y envía un pull request.
 
-After successful deployment, you can call the created application via HTTP:
-
-```bash
-curl https://xxxxxxx.execute-api.us-east-1.amazonaws.com/
-```
-
-Which should result in response similar to the following (removed `input` content for brevity):
-
-```json
-{
-  "message": "Go Serverless v2.0! Your function executed successfully!",
-  "input": {
-    ...
-  }
-}
-```
-
-### Local development
-
-You can invoke your function locally by using the following command:
-
-```bash
-serverless invoke local --function hello
-```
-
-Which should result in response similar to the following:
-
-```
-{
-  "statusCode": 200,
-  "body": "{\n  \"message\": \"Go Serverless v3.0! Your function executed successfully!\",\n  \"input\": \"\"\n}"
-}
-```
-
-
-Alternatively, it is also possible to emulate API Gateway and Lambda locally by using `serverless-offline` plugin. In order to do that, execute the following command:
-
-```bash
-serverless plugin install -n serverless-offline
-```
-
-It will add the `serverless-offline` plugin to `devDependencies` in `package.json` file as well as will add it to `plugins` in `serverless.yml`.
-
-After installation, you can start local emulation with:
-
-```
-serverless offline
-```
-
-To learn more about the capabilities of `serverless-offline`, please refer to its [GitHub repository](https://github.com/dherault/serverless-offline).
+Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE.md para más detalles.
