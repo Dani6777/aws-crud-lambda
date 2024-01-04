@@ -12,10 +12,13 @@ Este proyecto es una aplicación web que permite realizar operaciones CRUD (Crea
 ## Estructura del Proyecto
 
 ```plaintext
-/desafio-full-stack
-  /frontend
+/AWS-CRUD-LAMBDA
+  /frontend-react-main
     /src
     /public
-  /backend
-    /src
-  /tests
+  /src
+   /serverless
+  
+## Frontend
+
+Contiene el código del Front End desarrollado con React y TypeScript.
