@@ -23,33 +23,26 @@ Descripción corta del proyecto y su propósito.
 Configurar las credenciales de AWS:
 
  ```bash
-Copy code
 serverless config credentials --provider aws --key TU_ACCESS_KEY --secret TU_SECRET_KEY
 Despliegue del servicio:
-```
- ```bash
-Copy code
 serverless deploy
+```
 Frontend (React)
 Instalar dependencias:
-```
  ```bash
-Copy code
-cd frontend
+cd frontend-react-main
 npm install
 Configurar variables de entorno en el archivo .env:
 ```
  ```bash
-Copy code
 REACT_APP_API_URL=https://url-del-backend
-Iniciar la aplicación:
 ```
+Iniciar la aplicación:
  ```bash
-Copy code
 npm start
 Estructura del Proyecto
-backend/: Contiene el código del backend construido con Serverless Framework.
-frontend/: Contiene el código del frontend construido con React.
+src/: Contiene el código del backend construido con Serverless Framework.
+frontend-react-main/: Contiene el código del frontend construido con React.
 ```
 Contribuciones
 Si quieres contribuir al proyecto, sigue los pasos a continuación:
