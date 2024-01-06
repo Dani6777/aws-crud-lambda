@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "test": "jest"
   },
   "dependencies": {
     "@middy/core": "^5.2.1",
@@ -9,6 +8,6 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    
   }
 }
